@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
-
+    font-weight: 400;
 }
 
 *, *::after, *::before{
@@ -9,10 +9,9 @@ html {
 }
 
 body {
+
     background-color: rgb(213 225 239);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ 
 }
 
 p {
@@ -23,7 +22,8 @@ p {
 .card {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 320px;
     margin-inline: auto;
     padding: 16px 16px 40px;
@@ -34,13 +34,13 @@ p {
 
 }
 
-.qrcode {
+.card__qrcode {
     display: inline-block;
     margin-bottom: 24px;
     border-radius: 10px;
 }
 
-.attribution {
+.card__attribution {
     padding-inline: 16px;
       
 }
@@ -54,17 +54,19 @@ p {
 
 .attribution__text {
     color: rgb(104 119 141);
+    font-size: 15px;
+    line-height: 1.4;
+    
+    letter-spacing: 0.2px;
 }
-.attribution__author{
 
-}
-.attribution a { 
-    color: inherit;
+.card__attribution a { 
+    color: #ef7b7b;
     text-decoration: none;
    
 }
 
-.addition {
+.attribution__text--addition {
     margin-top: 10px;
-    font-style: 12px;
+    font-size: 12px;
 }
