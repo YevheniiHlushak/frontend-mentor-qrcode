@@ -66,7 +66,10 @@ p {
    
 }
 
-.attribution__text--addition {
-    margin-top: 10px;
+.attribution__text:not(:last-child){
+margin-bottom: 10px;
+}
+
+.attribution__text:last-child {
     font-size: 12px;
 }
